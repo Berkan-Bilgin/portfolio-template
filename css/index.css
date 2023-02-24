@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+   
+}
+
+
+:root {
+    --white-color:  #ffffff;
+    --primary-color:  #2C3E50;
+    --secondary-color: #31BC9C;
+    --footer-bg-color: #1A252F; 
+}
+
+h1 {
+    font-size: 4rem;
+    margin:16px 0;
+} 
+
+h2 {
+    font-size: 3rem;
+    margin:16px 0;
+}
+
+p{
+    font-size: 1.2rem;
+    margin:16px 0;
+}
+
+section{
+    padding:50px 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    max-width: 1200px;
+    
+}
+
+/***************************** HEADER SECTION***********************************/
+
+.header{
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.header__logo{
+    
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.header__navbar ul {
+    list-style: none;
+    display: flex;
+    
+}
+
+.header__navbar ul li {
+    font-weight: 600;
+    font-size: 1rem;
+    margin: 5px;
+    padding: 16px;
+}
+
+
+/***************************** INTRO SECTION***********************************/
+
+.intro{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.intro-image{
+    height: 240px ;
+    padding: 30px;
+}
+
+
+/***************************** PORTFOLIO SECTION***********************************/
+
+.portfolio{
+    color: var(--primary-color);
+}
+
+
+
+
+.cards{
+    display: grid;
+    margin: 0 auto;
+    gap: 2rem;
+    max-width: 1200px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card{
+    background-color: gray;
+    height: 250px;
+    border-radius: 1rem;
+}
+
+/***************************** ABOUT SECTION***********************************/
+
+.about{
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+}
+
+.about-space{
+    width: 2rem;
+}
+
+.about-columns{
+    justify-content: center;
+}
+
+.about-col{
+    width: 35%;
+}
+
+
+
+
+
+/***************************** CONTACT SECTION***********************************/
+
+.contact-form{
+    width: 50%;
+    margin: auto;
+}
+
+.contact-form > input[type=text] , .contact-form > textarea{
+    color: gainsboro;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 100%;
+}
+
+/***************************** FOOTER ***********************************/
+
+.footer{
+    background-color: var(--primary-color);
+    color: white;
+
+}
+
+.footer-container{
+    width: 80%;
+    max-width: 1200px;
+    display: grid;
+    margin: 0 auto;
+    
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.copyright-text{
+    background-color: black;
+    padding: 1.5rem;
+}
+
